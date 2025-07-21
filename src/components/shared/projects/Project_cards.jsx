@@ -10,11 +10,13 @@ export default function ProjectCards() {
             <h2 className="text-3xl text-blue-400 font-bold mt-2">{project.title}</h2>
             <p className="text-gray-200 mt-5">{project.description}</p>
 
-            <a href="#" className="flex items-center mt-5">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300" onClick={alert.bind(null, `Database not found for project: ${project.title}`)}>
-                View Project
-              </button>
-            </a>
+            <div className="flex mt-2">
+              {project.tools.map((tool, index) => (
+                <span key={index} className="text-white text-sm bg-blue-500 rounded-full px-3 py-1 mr-2 mt-2 cursor-pointer hover:bg-blue-600 transition-colors">
+                  {tool}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       ))}

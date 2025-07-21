@@ -8,10 +8,6 @@ export default function Footer() {
             <div className="flex flex-col gap-20 items-center w-full h-[90%] mt-10">
                 <p className="text-gray-200 text-2xl font-[Oswald]">Follow me on social media!</p>
 
-                <a href="#top" className="flex items-center justify-center bg-gray-200 h-10 w-10 rounded-full absolute right-10 hover:bg-gray-700 hover:text-white">
-                    <i class="fa-solid fa-angle-up z-1"></i>
-                </a>
-
                 <div className="flex items-center gap-20 text-gray-200 text-[30px]">
                     <div className="flex flex-col items-center gap-1">
                         <a href="https://www.facebook.com/jayrowwwww/"><i class="fa-brands fa-facebook hover:text-blue-500"></i></a>

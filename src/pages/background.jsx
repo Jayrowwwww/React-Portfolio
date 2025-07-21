@@ -3,7 +3,7 @@ import Background from "../components/shared/background/cards.jsx"
 export default function background_page(){
 
     return(
-        <div className="h-auto">
+        <div className="h-auto w-[50%]">
             <Background />
         </div>
     )
